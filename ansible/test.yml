@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  remote_user: ubuntu
+  vars:
+    jenkins_hostname: localhost
+  roles:
+    - role: ansible-role-jenkins
+      become: true
